@@ -1,0 +1,19 @@
+name: ChaseTerrorist
+main: maru\ChaseTerrorist
+author: maru
+api: [1.12.0, 1.13.0, 2.0.0]
+version: "1.0.0"
+
+commands:
+ 기록:
+  permission: chaseterrorist.commands.log
+  usage: /기록
+  description: 블럭을 누가 부수고 설치했는지 기록을 봅니다.
+ 
+permissions:
+ chaseterrorist.*:
+  default: true
+  children:
+   chaseterrorist.commands.*:
+    children:
+     chaseterrorist.commands.log:
