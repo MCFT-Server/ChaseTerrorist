@@ -2,7 +2,7 @@ name: ChaseTerrorist
 main: maru\ChaseTerrorist
 author: maru
 api: [1.12.0, 1.13.0, 2.0.0]
-version: "1.0.0"
+version: "1.0.1"
 
 commands:
  기록:
@@ -15,5 +15,7 @@ permissions:
   default: true
   children:
    chaseterrorist.commands.*:
+    default: true
     children:
      chaseterrorist.commands.log:
+      default: true
